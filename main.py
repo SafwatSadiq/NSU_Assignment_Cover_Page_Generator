@@ -8,7 +8,7 @@ Header = "ASSIGNMENT"
 # streamlit input box
 col1, col2, col3 = st.columns(3)
 with col1:
-    Course = st.text_input('Course').strip().title()
+    Course = st.text_input('Course').strip().upper()
 with col2:
     Faculty = st.text_input('Faculty').strip().title()
 with col3:
