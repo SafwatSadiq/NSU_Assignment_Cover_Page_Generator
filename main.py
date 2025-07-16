@@ -46,14 +46,14 @@ def generate_pdf():
     draw_border(pdf, 6.7)
 
     # Adding New Fonts
-    pdf.add_font("Bay_Tavern", "", "Fonts/Bay_Tavern/Bay Tavern S Regular.ttf")
+    pdf.add_font("Bay_Tavern", "", "Fonts/Bay_Tavern/Bay_Tavern_S_Regular.ttf")
     pdf.add_font("Nimbus_Rom_No_9L", "B", "Fonts/Nimbus_Rom_No_9L/NimbusRomNo9L-Med.ttf")
     pdf.add_font("Nimbus_Rom_No_9L", "", "Fonts/Nimbus_Rom_No_9L/NimbusRomNo9L-Reg.ttf")
 
     # Working With The NSU Logo
     page_center = pdf.w / 2
     image_width = 50
-    pdf.image("Data\\Logo2.png", x=page_center - (image_width / 2), y=20, w=image_width)
+    pdf.image("Data/Logo2.png", x=page_center - (image_width / 2), y=20, w=image_width)
 
     # Header Part
     pdf.set_font("Bay_Tavern", size=50)
